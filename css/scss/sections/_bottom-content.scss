@@ -1,12 +1,15 @@
 .bottom-content{
   background-color:rgb(249, 244, 244);
   padding: 18px;
+  border-top: solid  2px rgb(211, 211, 211)
+
 }
 .bottom-content .container{
   display: flex ;
             justify-content: center;
             align-items: center;
-        
+            
+
 
 }
 .bottom-icons .end-icon{

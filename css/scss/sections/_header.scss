@@ -19,11 +19,16 @@ header {
           grid-template-areas: "logotype menu menu";
       }
   }
+  
 
   #menu {
       grid-area: menu;
       grid-template-areas: "menulinks"
                            "menuicons";
+                           
+                           
+                           
+
 
       @include lg {
           display: grid;
@@ -36,13 +41,22 @@ header {
   }
   #menu-links {
       grid-area: menulinks;
+      
   }
   #menu-icons {
       grid-area: menuicons;
+      
   }
   #toggle-icon {
       grid-area: toggleicon;   
+      
+      padding-left: 150px;
+      
 
+      
+     @include md{
+        padding-left: 450px;
+     }
       @include lg {
           display: none;
       }
@@ -60,15 +74,17 @@ header {
           display: flex !important;
           justify-content: center;
           align-items: center;
+          
       }
       
       .menu-link {
           color: $color-dark-2;
           font-weight: $font-weight-medium;
           text-decoration: none;           
-          margin: 10px 12px;
+          margin: 15px 12px;
           display: block;
           transition: color 0.15s;
+          
 
           &:hover,
           &.active {
@@ -81,8 +97,9 @@ header {
   }
 
   .menu-icons {
-      margin-top: 2rem;
+      
       @include content-center;
+      
       
       @include lg {
           margin-top: 0;
