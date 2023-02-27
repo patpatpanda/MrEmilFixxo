@@ -24,6 +24,10 @@
   margin-left: 11rem;
   transition: background-color 0.25s, color 0.20s;
 }
+.support-icons .support-icon:hover{
+  @include dark-colors;
+      text-decoration: none;   
+}
 .support-text-1{
 
   display: flex;

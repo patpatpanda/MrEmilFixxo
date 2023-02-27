@@ -23,6 +23,10 @@
   
   
 }
+.bottom-icons .end-icon :hover{
+  @include dark-colors;
+      text-decoration: none; 
+}
 .end-title{
   margin-top: 12px;
   display: flex ;
