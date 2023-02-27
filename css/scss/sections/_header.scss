@@ -5,6 +5,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+  
 
   .container {
       padding-top: 1rem;
@@ -17,6 +18,7 @@ header {
       @include lg {
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-areas: "logotype menu menu";
+          
       }
   }
   
@@ -137,4 +139,5 @@ header {
 
 
 }
+
 

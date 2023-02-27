@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 10px;
+  
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
@@ -19,9 +19,9 @@
   
  
   margin-top: 130px;
-  width: 800px;
-  height: 570px;
-  background-color: rgb(169, 167, 167);
+  width: 600px;
+  height: 680px;
+  background-color: rgb(207, 206, 206);
   
 }
 .a-1{
@@ -30,7 +30,7 @@
   padding-top: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 200px;
+  margin-left: 100px;
   
 }
 
@@ -40,9 +40,11 @@
 
   
 
-.knapp-2{
+.knapp-1{
   
- margin-left: 40px;
+margin-left: 50px;
+ 
+ 
  
 }
 
@@ -183,6 +185,11 @@
           opacity: 100%;
           
         }
+        .mid-products-1 .wrapper .b .product-card .product-card-body {
+          justify-content: center;
+          text-align: center;
+         }
+         
         
       }
  

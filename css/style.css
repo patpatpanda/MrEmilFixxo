@@ -565,12 +565,12 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .office {
   margin-left: 30px;
-  width: 500px;
+  width: 450px;
   height: 380px;
 }
 
 .party {
-  width: 500px;
+  width: 450px;
   margin-right: 30px;
   height: 380px;
 }
@@ -579,7 +579,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 380px;
 }
 
 .content-box-2 {
@@ -612,7 +611,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   border: solid 2px black;
   padding: 15px 35px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
   display: inline-block;
   transition: background-color 0.25s;
   position: relative;
@@ -644,7 +644,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 .wrapper {
-  margin-top: 10px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
@@ -659,9 +658,9 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .mid-products-1 .wrapper .a {
   margin-top: 130px;
-  width: 800px;
-  height: 570px;
-  background-color: rgb(169, 167, 167);
+  width: 600px;
+  height: 680px;
+  background-color: rgb(207, 206, 206);
 }
 
 .a-1 {
@@ -669,11 +668,11 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   padding-top: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
-.knapp-2 {
-  margin-left: 40px;
+.knapp-1 {
+  margin-left: 50px;
 }
 
 .mid-products-1 .wrapper .b {
@@ -809,6 +808,10 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   .mid-products-1 .wrapper .b .product-card .product-card-img .product-card-menu {
     opacity: 100%;
   }
+  .mid-products-1 .wrapper .b .product-card .product-card-body {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .mid-products-2 .wrapper .box {
   border-radius: 5px;
@@ -820,26 +823,25 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 35px;
-  margin-top: 110px;
 }
 
 .mid-products-2 .wrapper .a {
-  margin-top: 130px;
-  width: 800px;
-  height: 570px;
-  background-color: rgb(169, 167, 167);
+  margin-top: 20px;
+  width: 600px;
+  height: 680px;
+  background-color: rgb(189, 187, 187);
 }
 
-.mid-products-2 .wrapper .a-1 {
+.mid-products-2 .wrapper .a-2 {
   color: #ffffff;
   padding-top: 200px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
 .knapp-2 {
-  margin-left: 40px;
+  margin-left: 25px;
 }
 
 .mid-products-2.wrapper .b {
@@ -974,5 +976,96 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   }
   .mid-products-2 .wrapper .b .product-card .product-card-img .product-card-menu {
     opacity: 100%;
+  }
+  .mid-products-2 .wrapper .b .product-card .product-card-body {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.support .container {
+  border-top: solid 2px gray;
+  margin-top: 55px;
+}
+
+.support-icons {
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
+.support-icon {
+  position: relative;
+  height: 55px;
+  width: 55px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #222529;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  margin-left: 11rem;
+  transition: background-color 0.25s, color 0.2s;
+}
+
+.support-text-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 88px;
+  font-weight: bold;
+}
+
+.support-text-1 .customer-text {
+  margin-right: 88px;
+  margin-left: 200px;
+}
+
+.support-text-1 .payment-text {
+  margin-right: 88px;
+}
+
+.support-text-1 .delivery-text {
+  margin-right: 88px;
+}
+
+.support-text-1 .reuters-text {
+  margin-right: 88px;
+}
+
+.support-text-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 100px;
+  font-size: 0.7em;
+  color: #616365;
+}
+
+.support-text-2 .customer-text {
+  margin-right: 110px;
+  margin-left: 40px;
+}
+
+.support-text-2 .payment-text {
+  margin-right: 110px;
+}
+
+.support-text-2 .delivery-text {
+  margin-right: 110px;
+}
+
+.support-text-2 .reuters-text {
+  margin-right: 177px;
+}
+
+@media only screen and (max-width: 992px) {
+  .support .container {
+    display: none;
   }
 }

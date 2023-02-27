@@ -1,0 +1,105 @@
+.support .container{
+  border-top: solid 2px gray;
+  margin-top: 55px;
+
+}
+
+.support-icons{
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
+.support-icon{
+  position: relative;
+  height: 55px;
+  width: 55px;
+  font-size: 1.5em;
+  @include content-center;
+  @include default-colors;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 5px 2px $color-shadow-1;
+  margin-left: 11rem;
+  transition: background-color 0.25s, color 0.20s;
+}
+.support-text-1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 88px;
+  font-weight:bold;
+
+}
+.support-text-1 .customer-text{
+
+  margin-right: 88px;
+
+  margin-left: 200px;
+}
+.support-text-1 .payment-text{
+  margin-right: 88px;
+  
+}
+.support-text-1 .delivery-text{
+ margin-right: 88px;
+
+}.support-text-1 .reuters-text{
+  margin-right: 88px;
+ 
+ 
+}
+.support-text-2{
+
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 100px;
+  font-size: 0.7em;
+  color: $color-dark-3;
+  
+
+}
+.support-text-2 .customer-text{
+
+  margin-right: 110px;
+
+  margin-left: 40px;
+}
+.support-text-2 .payment-text{
+  margin-right: 110px;
+
+  
+}
+.support-text-2 .delivery-text{
+ 
+ margin-right: 110px;
+
+}.support-text-2 .reuters-text{
+  margin-right: 177px;
+  
+ 
+ 
+}
+@media only screen and (max-width: 992px){
+  .support .container{
+    
+    display: none;
+    
+    
+  }
+  
+
+}
+
+
+
+
+
+
+
+
