@@ -81,6 +81,43 @@ button {
   text-decoration: none;
 }
 
+.btn-theme-2 {
+  background-color: rgb(253, 253, 253);
+  color: black;
+  border: solid 2px black;
+  padding: 24px 45px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.25s;
+  position: relative;
+}
+.btn-theme-2::before {
+  content: "";
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 25px;
+  width: 25px;
+}
+.btn-theme-2::after {
+  content: "";
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  height: 25px;
+  width: 25px;
+}
+.btn-theme-2:hover {
+  background-color: rgb(199, 146, 248);
+  text-decoration: none;
+}
+
 .breadcrumb {
   margin-top: 30px;
 }
@@ -570,7 +607,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 .office {
-  margin-left: 30px;
   width: 450px;
   height: 380px;
 }
@@ -609,44 +645,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .knapp {
   margin-left: 100px;
-}
-
-.btn-theme-2 {
-  background-color: white;
-  color: black;
-  border: solid 2px black;
-  padding: 15px 35px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: bold;
-  display: inline-block;
-  transition: background-color 0.25s;
-  position: relative;
-}
-.btn-theme-2::before {
-  content: "";
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  height: 25px;
-  width: 25px;
-}
-.btn-theme-2::after {
-  content: "";
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  height: 25px;
-  width: 25px;
-}
-.btn-theme-2:hover {
-  background-color: #222529;
-  color: #f5f5f5;
-  text-decoration: none;
 }
 
 .wrapper {
@@ -1054,7 +1052,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding-left: 100px;
+  margin-left: 200px;
   font-size: 0.7em;
   color: #616365;
 }
@@ -1076,7 +1074,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   margin-right: 177px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 600px) {
   .support .container {
     display: none;
   }

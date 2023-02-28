@@ -25,7 +25,7 @@
 }
 .office{
   
- margin-left: 30px;
+ 
   width: 450px;
   height: 380px;
 }
@@ -82,49 +82,8 @@
  
  }
  
- .btn-theme-2 {
-  background-color: white;
-  color: black;
-  border: solid  2px black;
  
-  padding: 15px 35px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: bold;
 
-  display: inline-block;
-  transition: background-color 0.25s;
-  position: relative;
-  
-  
-
-  &::before {
-      content: "";
-      border-top: 2px solid black;
-      border-left: 2px solid black;
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      height: 25px;
-      width: 25px;
-  }
-
-  &::after {
-      content: "";
-      border-bottom: 2px solid black;
-      border-right: 2px solid black;
-      position: absolute;
-      bottom: 12px;
-      right: 12px;
-      height: 25px;
-      width: 25px;
-  }
-
-  &:hover {
-      @include dark-colors;
-      text-decoration: none;    
-  }
-}
 
 
 
