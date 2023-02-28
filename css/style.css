@@ -613,7 +613,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .party {
   width: 450px;
-  margin-right: 30px;
   height: 380px;
 }
 
@@ -647,6 +646,25 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   margin-left: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+  .mid-images .container .office {
+    display: none;
+  }
+  .mid-images .container .party {
+    display: none;
+  }
+  .mid-images .container .box {
+    height: 380px;
+    width: 400px;
+  }
+  .mid-images .container .box .content-box-2 {
+    height: 360px;
+    width: 380px;
+  }
+  .knapp {
+    margin-left: 50px;
+  }
+}
 .wrapper {
   display: grid;
   grid-gap: 10px;
@@ -662,8 +680,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .mid-products-1 .wrapper .a {
   margin-top: 130px;
-  width: 600px;
-  height: 680px;
+  width: auto;
+  height: auto;
   background-color: rgb(207, 206, 206);
 }
 
@@ -831,8 +849,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .mid-products-2 .wrapper .a {
   margin-top: 20px;
-  width: 600px;
-  height: 680px;
+  width: auto;
+  height: auto;
   background-color: rgb(189, 187, 187);
 }
 
