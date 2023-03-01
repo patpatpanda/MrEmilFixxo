@@ -65,19 +65,21 @@
         <section class="contact-form">
             <div class="container">
                 <h1>Come in Contact with Us</h1>
-                <form id="form" method="post">
+                <form novalidate id="form" method="post">
                     <div class="contact-form-name">
-                        <input id="name" name="name" type="text" placeholder="Your Name">
-                        <div class="error">aaa</div>
+                        <input onchange="validateName(event)" id="name" name="name" type="text"  placeholder="Your Name" required>
+                        <label id="error"></label>
+
+                        <div  class="error"></div>
                        
                     </div>
                     <div  class="contact-form-email">
-                        <input id="email" name="email" type="text" placeholder="Your Mail">
-                        <div class="error">aaaa</div>
+                        <input onchange="validateEmail(event)" id="email" name="email" type="text" placeholder="Your Mail" required>
+                        <label id="error-email"></label>
                     </div>
                     <div class="contact-form-comments">
-                        <textarea id="comments" name="comments" placeholder="Comments"></textarea>
-                        <div class="error">aaa</div>
+                        <textarea id="comments" name="comments" placeholder="Comments"></textarea required>
+                        <div class="error"></div>
                     </div>
                     
                     <button class="btn-theme" type="submit">Post Comments</button>

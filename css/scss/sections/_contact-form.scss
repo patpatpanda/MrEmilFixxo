@@ -20,10 +20,19 @@
       gap: 20px;
   }
 
-  .contact-form form .error {
-      font-size: 0.9em;
+ 
+  
+  #error{
+    font-size: 0.9em;
       padding: 5px;
       color:#ff7373;
+
+  }
+  #error-email{
+    font-size: 0.9em;
+      padding: 5px;
+      color:#ff7373;
+
   }
 
   .contact-form form input,

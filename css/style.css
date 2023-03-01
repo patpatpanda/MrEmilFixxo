@@ -171,7 +171,13 @@ button {
   gap: 20px;
 }
 
-.contact-form form .error {
+#error {
+  font-size: 0.9em;
+  padding: 5px;
+  color: #ff7373;
+}
+
+#error-email {
   font-size: 0.9em;
   padding: 5px;
   color: #ff7373;
@@ -681,7 +687,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .mid-products-1 .wrapper .a {
   margin-top: 130px;
   width: auto;
-  height: auto;
+  height: 680px;
   background-color: rgb(207, 206, 206);
 }
 
@@ -850,7 +856,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .mid-products-2 .wrapper .a {
   margin-top: 20px;
   width: auto;
-  height: auto;
+  height: 680px;
   background-color: rgb(189, 187, 187);
 }
 
