@@ -78,9 +78,9 @@ async function handleContactForm(e) {
   e.preventDefault()
 
   const form = {
-    name 
     email: e.target['email'].value,
-    password: e.target['password'].value
+    names: e.target['name'].value,
+    Comments: e.target['comments'].value
 }
 
   const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
