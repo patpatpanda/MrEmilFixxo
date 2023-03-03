@@ -699,7 +699,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .a-1 {
   color: #ffffff;
-  padding-top: 200px;
+  padding-top: 250px;
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 100px;
@@ -868,7 +868,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 
 .mid-products-2 .wrapper .a-2 {
   color: #ffffff;
-  padding-top: 200px;
+  padding-top: 250px;
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 200px;
