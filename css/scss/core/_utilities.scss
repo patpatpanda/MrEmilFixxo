@@ -2,8 +2,11 @@ html, body {
   @include default-font;
   @include default-colors;
 }
-
-.totop-arrow {
+.hide{
+  display:none
+}
+#totop-arrow {
+  display: block;
   @include default-colors-with-border;
   position: fixed;
   right: 50px;

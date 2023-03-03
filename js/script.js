@@ -1,3 +1,26 @@
+
+try {
+  const toggleButton = document.querySelector('[data-option="toggle"]')
+  const target = toggleButton.getAttribute('data-target')
+  toggleButton.addEventListener('click', toggleTarget)
+
+  function toggleTarget() {
+      const element = document.querySelector(target)
+
+      if (!element.classList.contains('hide')) {
+          element.classList.add('hide')
+      } else {
+          element.classList.remove('hide')
+      }
+  }
+} 
+catch {}
+
+
+
+
+
+
 const names = document.getElementById('name')
 const email = document.getElementById('email')
 const comments = document.getElementById('comments')
@@ -11,14 +34,15 @@ const form = document.getElementById('form')
 const validateName = (e) => {
   const regEx = /^[A-Z]([a-zA-Z\u00C0-\u017F]+(([' -][a-zA-Z])?[a-zA-Z]*)){1,30}$/
   if (!regEx.test(e.target.value)) {
-    document.getElementById("error").innerText = "Invalid Name!"
+    document.getElementById("error-name").innerText = "Invalid Name!"
     document.getElementById('name-message').innerText = 'Your name has to start with uppercase'
     
       console.log("firstname not valid")
       return false
   }
-  document.getElementById("error").innerText = ""
-  document.getElementById('name-message').innerText = ""
+  document.getElementById("error-name").innerText = ""
+  document.getElementById("name-message").innerText = ""
+  
   
       
   console.log("firstname valid")
@@ -63,8 +87,15 @@ form.addEventListener('submit', (e) =>  {
   
   if (messages.length > 0){
     e.preventDefault()
+    
 
   }
+  
 
 
+})
+
+const arrow = document.querySelector('#totop-arrow')
+arrow.addEventListener('click', function(){
+  window.scrollTo({top:0,behavior:"smooth"})
 })

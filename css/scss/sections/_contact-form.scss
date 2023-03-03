@@ -22,7 +22,7 @@
 
  
   
-  #error{
+  #error-name{
     font-size: 0.9em;
       padding: 5px;
       color:#ff7373;
@@ -39,6 +39,11 @@
       padding: 5px;
       color:#ff7373;
 
+  }
+  #valid-message{
+    font-size: 0.9;
+    padding: 5px;
+    color: rgb(6, 240, 6);
   }
 
   .contact-form form input,
