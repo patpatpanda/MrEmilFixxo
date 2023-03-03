@@ -1,3 +1,17 @@
+const arrow = document.querySelector('#totop-arrow')
+arrow.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: "smooth"})
+})
+
+window.addEventListener('scroll', function() {
+    const scrollPosY = window.scrollY
+
+    if (scrollPosY >= 100) {
+        arrow.style.display = 'block'
+    } else {
+        arrow.style.display = 'none'
+    }
+})
 
 try {
   const toggleButton = document.querySelector('[data-option="toggle"]')
@@ -13,14 +27,13 @@ try {
           element.classList.remove('hide')
       }
   }
-} 
-catch {}
+} catch {}
 
+const names = document.getElementById('name')
+const email = document.getElementById('email')
+const comments = document.getElementById('comments')
 
-
-
-
-
+const form = document.getElementById('form')
 
 
 
@@ -74,35 +87,25 @@ const validateComments = (e) => {
   return true
 }
 
-async function handleContactForm(e) {
-  e.preventDefault()
-
-  const form = {
-    email: e.target['email'].value,
-    names: e.target['name'].value,
-    Comments: e.target['comments'].value
-}
-
-  const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
-      method: 'post',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(form)
-  })
+form.addEventListener('submit', (e) =>  {
+  let messages = []
+  if(names.value === '' || email.value === '' || comments.value === '')
+  messages.push('')
   
-  if (res.status === 200)
-      console.log('tack för din förfrågan!')
+  if (messages.length > 0){
+    e.preventDefault()
+    
 
-}
-
-
+  }
+  else{
+    
+  }
   
 
 
-
-
-const arrow = document.querySelector('#totop-arrow')
-arrow.addEventListener('click', function(){
-  window.scrollTo({top:0,behavior:"smooth"})
 })
+
+
+
+
+
