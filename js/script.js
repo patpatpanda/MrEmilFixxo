@@ -21,11 +21,6 @@ catch {}
 
 
 
-const names = document.getElementById('name')
-const email = document.getElementById('email')
-const comments = document.getElementById('comments')
-
-const form = document.getElementById('form')
 
 
 
@@ -79,21 +74,33 @@ const validateComments = (e) => {
   return true
 }
 
+async function handleContactForm(e) {
+  e.preventDefault()
 
-form.addEventListener('submit', (e) =>  {
-  let messages = []
-  if(names.value === '' || email.value === '' || comments.value === '')
-  messages.push('')
+  const form = {
+    name 
+    email: e.target['email'].value,
+    password: e.target['password'].value
+}
+
+  const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
+      method: 'post',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+  })
   
-  if (messages.length > 0){
-    e.preventDefault()
-    
+  if (res.status === 200)
+      console.log('tack för din förfrågan!')
 
-  }
+}
+
+
   
 
 
-})
+
 
 const arrow = document.querySelector('#totop-arrow')
 arrow.addEventListener('click', function(){
