@@ -271,12 +271,12 @@ button {
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 header .container {
   padding-top: 1rem;
@@ -291,16 +291,6 @@ header .container {
     grid-template-areas: "logotype menu menu";
   }
 }
-header #logotype {
-  grid-area: logotype;
-  font-size: 35px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #222529;
-}
-header .hide {
-  display: none;
-}
 header #menu {
   grid-area: menu;
   grid-template-areas: "menulinks" "menuicons";
@@ -312,48 +302,74 @@ header #menu {
     grid-template-areas: "menulinks menuicons";
   }
 }
+header #logotype {
+  grid-area: logotype;
+}
 header #menu-links {
   grid-area: menulinks;
 }
 header #menu-icons {
   grid-area: menuicons;
-  margin-top: 40px;
 }
-@media (min-width: 960px) {
-  header #menu-icons {
-    margin-top: 0;
+header #toggle-icon {
+  grid-area: toggleicon;
+  padding-left: 150px;
+}
+@media (min-width: 720px) {
+  header #toggle-icon {
+    padding-left: 450px;
   }
 }
 @media (min-width: 960px) {
-  header .links {
+  header #toggle-icon {
+    display: none;
+  }
+}
+header .logotype {
+  font-size: 2.188em;
+  font-weight: 700;
+  text-decoration: none;
+  color: #222529;
+}
+@media (min-width: 960px) {
+  header .menu-links {
     display: flex !important;
     justify-content: center;
     align-items: center;
   }
 }
-header .links .link {
+header .menu-links .menu-link {
   color: #222529;
   font-weight: 500;
   text-decoration: none;
-  margin: 10px 12px;
+  margin: 15px 12px;
   display: block;
   transition: color 0.15s;
 }
-header .links .link:hover, header .links .link.active {
+header .menu-links .menu-link:hover, header .menu-links .menu-link.active {
   color: #ff7373;
   text-decoration: none;
 }
-header .icons {
+header .menu-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 960px) {
-  header .icons {
+  header .menu-icons {
+    margin-top: 0;
     justify-content: flex-end;
   }
 }
-header .icons .link {
+header .menu-icons nav {
+  display: none;
+}
+@media (min-width: 960px) {
+  header .menu-icons nav {
+    display: flex;
+  }
+}
+header .menu-icons .menu-link {
   position: relative;
   height: 36px;
   width: 36px;
@@ -368,19 +384,10 @@ header .icons .link {
   margin-left: 1rem;
   transition: background-color 0.25s, color 0.2s;
 }
-header .icons .link:hover, header .icons .link.active {
+header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   background-color: #222529;
   color: #f5f5f5;
   text-decoration: none;
-}
-header #toggle-icon {
-  grid-area: toggleicon;
-  justify-content: flex-end;
-}
-@media (min-width: 960px) {
-  header #toggle-icon {
-    display: none;
-  }
 }
 
 .showcase {

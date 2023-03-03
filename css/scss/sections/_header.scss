@@ -1,91 +1,122 @@
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    width: 100%;
     background-color: $bg-transparent-light-1;
     box-shadow: 0 0 2px 1px $color-shadow-1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     
+  
     .container {
         padding-top: 1rem;
-        padding-bottom: 1rem;      
+        padding-bottom: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "logotype toggleicon"
                              "menu menu";
+  
         @include lg {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: "logotype menu menu";
+            
         }
     }
-
-    #logotype {
-        grid-area: logotype;
-        font-size: 35px;
-        font-weight: $font-weight-bold;
-        text-decoration: none;
-        color: $color-dark-2;
-    }
-
-    .hide {
-        display: none;
-    }
-
+    
+  
     #menu {
         grid-area: menu;
         grid-template-areas: "menulinks"
                              "menuicons";
+                             
+                             
+                             
+  
+  
         @include lg {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "menulinks menuicons";
         }
     }
-
+    #logotype {
+        grid-area: logotype;
+    }
     #menu-links {
         grid-area: menulinks;
+        
     }
     #menu-icons {
         grid-area: menuicons;
-        margin-top: 40px;
-
+        
+    }
+    #toggle-icon {
+        grid-area: toggleicon;   
+        
+        padding-left: 150px;
+        
+  
+        
+       @include md{
+          padding-left: 450px;
+       }
         @include lg {
-            margin-top: 0;
+            display: none;
         }
     }
-
-    .links {      
+  
+    .logotype {
+        font-size: 2.188em;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+        color: $color-dark-2;
+    }
+  
+    .menu-links {      
         @include lg {
             display: flex !important;
             justify-content: center;
             align-items: center;
+            
         }
         
-        .link {
+        .menu-link {
             color: $color-dark-2;
             font-weight: $font-weight-medium;
             text-decoration: none;           
-            margin: 10px 12px;
+            margin: 15px 12px;
             display: block;
             transition: color 0.15s;
-
+            
+  
             &:hover,
             &.active {
                 color: $color-theme;
                 text-decoration: none;
             }
         }
-
+  
+  
     }
-
-    .icons {
+  
+    .menu-icons {
+        
         @include content-center;
         
+        
         @include lg {
+            margin-top: 0;
             justify-content: flex-end;
         }
-
-        .link {
+  
+        nav {
+            display: none;
+  
+            @include lg {
+                display: flex;
+            }
+        }
+  
+        .menu-link {
             position: relative;
             height: 36px;
             width: 36px;
@@ -96,7 +127,7 @@ header {
             box-shadow: 0 0 5px 2px $color-shadow-1;
             margin-left: 1rem;
             transition: background-color 0.25s, color 0.20s;
-
+  
             &:hover,
             &.active {
                 @include dark-colors;
@@ -105,13 +136,8 @@ header {
         }
         
     }
-
-    #toggle-icon {
-        grid-area: toggleicon;   
-        justify-content: flex-end;
-
-        @include lg {
-            display: none;
-        }
-    }
-}
+  
+  
+  }
+  
+  
