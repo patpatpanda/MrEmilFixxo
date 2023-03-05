@@ -1,9 +1,4 @@
 
-
-
-
-  
-
 const names = document.getElementById('name')
 const email = document.getElementById('email')
 const comments = document.getElementById('comments')
@@ -41,10 +36,13 @@ const validateEmail = (e) => {
     document.getElementById("error-email").innerText = "Invalid Email!"
     
       console.log("firstname not valid")
+
       return false
   }
   document.getElementById("error-email").innerText = ""
-  console.log("firstname valid")
+  console.log(e.target.value)
+  
+  
   return true
 
 }
@@ -58,9 +56,11 @@ const validateComments = (e) => {
       return false
   }
   document.getElementById("error-comments").innerText = ""
-  console.log("firstname valid")
+  console.log(e.target.value)
+
   return true
 }
+
 
 form.addEventListener('submit', (e) =>  {
   let messages = []
@@ -72,9 +72,40 @@ form.addEventListener('submit', (e) =>  {
     
 
   }
- 
+  
+ async function handleContactForm(e) {
+  
+e.preventDefault()
+  const form = {
+    name: e.target['name'].value,
+    email: e.target['email'].value,
+    comments: e.target['comments'].value
+    
+    
+  }
+  body: JSON.stringify(form)
+  console.log(form)
+
+  const res = await fetch('https://kyh-net22.azurewebsites.net/api/contacts', {
+      method: 'post',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+  })
+  
+  if (res.status === 200){
+    console.log('rätt')
+  }
+      else{
+        console.log("felfelfel")
+      }
+
+}
 
 })
+
+
 
 
 
