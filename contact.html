@@ -67,11 +67,11 @@
         <section class="contact-form">
             <div class="container">
                 <h1>Come in Contact with Us</h1>
-                <form novalidate id="form" onsubmit="handleContactForm(event)">
+                <form onsubmit="handleLogin(event)" novalidate>
                     <div class="contact-form-name">
-                        <input onkeyup="validateName(event)" id="name"  type="text"  placeholder="Your Name" required>
-                        <label id="error-name"></label>
-                        <label id="name-message"></label>
+                        <input id="name" type="text" placeholder="Your Name" required onkeyup="validate(event)">
+                        <label id="error-name" class="error" ></label>
+                       
                         
                         
 
@@ -79,15 +79,19 @@
                        
                     </div>
                     <div  class="contact-form-email">
-                        <input onkeyup="validateEmail(event)" id="email"  type="email" placeholder="Your Mail" required>
-                        <label id="error-email"></label>
+                        <input id="email" type="email" placeholder="Your Email" required onkeyup="validate(event)">
+                        <label id="error-email" class="error"></label>
                     </div>
-                    <div class="contact-form-comments">
-                        <textarea onkeyup="validateComments(event)" id="comments"  placeholder="Comments"></textarea required>
-                        <label id="error-comments"></label>
+
+
+                     <div class="contact-form-comments">
+                        <input id="comments" type="tel"  placeholder="Comments" required onkeyup="validate(event)">
+                        <label id="error-comments" class="error"></label>
                        
                     </div>
+                   
                     
+                    <div id="errorMessage" class="error"></div>
                     <button class="btn-theme" type="submit">Post Comments</button>
                 </form>
             </div>
@@ -122,7 +126,8 @@
        
         <button id="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <script src="js/script.js"></script>
+    <script src="js/formscript.js"></script>
     <script src="js/scriptt.js"></script>
+   
 </body>
 </html>
