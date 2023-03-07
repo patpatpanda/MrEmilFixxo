@@ -1191,7 +1191,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   right: 0;
   padding: 10px 20px;
   text-align: center;
-  margin-bottom: 145px;
+  margin-bottom: 125px;
 }
 
 .product-collection .product-grid .product-card .product-card-body {
@@ -1206,18 +1206,18 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 .product-collection .product-grid .product-card .product-card-title {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .product-collection .product-grid .product-card .product-card-ranking {
   color: #ff7373;
-  font-size: 20px;
+  font-size: 12px;
   margin-top: 10px;
 }
 
 .product-collection .product-grid .product-card .product-card-price {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -1284,6 +1284,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     right: 0;
     padding: 10px 20px;
     text-align: center;
-    margin-bottom: 125px;
+    margin-bottom: 110px;
   }
 }
