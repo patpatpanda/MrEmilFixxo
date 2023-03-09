@@ -34,4 +34,7 @@ async function getProducts(target, tag) {
       </div>
       `
   }
+
+
+  
 }
