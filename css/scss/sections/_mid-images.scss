@@ -8,7 +8,7 @@
   gap: 15px;
 }
 .mid-images .container .box{
-  display: block;
+
   background-color: #eeeeef;
 
   
@@ -80,25 +80,24 @@
 
 
  @media only screen and (max-width: 600px){
+  
+  .mid-images .container .box{
+  
+    display:  none !important;
+   }
   .mid-images .container .office{
-    display: none;
+    width: 450px;
   }
   
   .mid-images .container .party{
     display: none;
  }
- .mid-images .container .box{
-  
-  height: 380px;
-  width: 400px;
- }
+
  .mid-images .container .box .content-box-2{
-  height: 360px;
-  
-  width: 380px;
+  display: none;
  }
  .knapp{
-  margin-left: 50px;
+  display: none;
  }
 }
   
