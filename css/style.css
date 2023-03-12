@@ -662,7 +662,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     gap: 30px;
   }
   .mid-products-1 .wrapper .b .product-card .product-card-img img {
-    width: 360px;
+    width: 370px;
     object-fit: cover;
   }
   .mid-products-1 .wrapper .b .product-card .product-card-img .menu-icons .menu-link {
@@ -830,8 +830,11 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  .mid-products-2 .wrapper .b .product-card .product-card-img {
+    position: relative;
+  }
   .mid-products-2 .wrapper .b .product-card .product-card-img img {
-    width: 360px;
+    width: 370px;
     object-fit: cover;
   }
   .mid-products-2 .wrapper .b .product-card .product-card-img .menu-icons .menu-link {

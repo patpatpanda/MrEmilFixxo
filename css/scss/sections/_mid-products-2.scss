@@ -146,13 +146,21 @@
           .mid-products-2 .wrapper .a{
              display: none;
            }
+           
            .mid-products-2 .wrapper .b{
              display: grid;
              grid-template-columns: 1fr;
              gap: 30px;
+             
            }
+
+           
+           .mid-products-2 .wrapper .b .product-card .product-card-img {
+            position: relative;
+        }
+           
            .mid-products-2 .wrapper .b .product-card .product-card-img img {
-             width: 360px;
+             width: 370px;
              object-fit: cover; 
          }
            
