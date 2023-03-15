@@ -535,7 +535,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .mid-products-1 .wrapper .a {
   margin-top: 130px;
   width: auto;
-  height: 680px;
+  height: 730px;
   background-color: rgb(207, 206, 206);
 }
 
@@ -571,7 +571,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 .mid-products-1 .wrapper .b .product-card .product-card-img img {
-  width: 250px;
+  width: 280px;
   object-fit: cover;
 }
 
@@ -704,13 +704,13 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .mid-products-2 .wrapper .a {
   margin-top: 20px;
   width: auto;
-  height: 680px;
+  height: 730px;
   background-color: rgb(189, 187, 187);
 }
 
 .mid-products-2 .wrapper .a-2 {
   color: #ffffff;
-  padding-top: 250px;
+  padding-top: 270px;
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 200px;
@@ -740,7 +740,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 .mid-products-2 .wrapper .b .product-card .product-card-img img {
-  width: 250px;
+  width: 280px;
   object-fit: cover;
 }
 
