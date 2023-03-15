@@ -538,11 +538,11 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   padding-top: 250px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 100px;
+  margin-left: 120px;
 }
 
 .knapp-1 {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 .mid-products-1 .wrapper .b {
@@ -599,13 +599,31 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   text-decoration: none;
 }
 
-.mid-products-1 .wrapper .b .product-card .product-card-img .btn-theme {
+.b .product-card .product-card-img .pika {
+  background-color: #ff7373;
+  color: #f5f5f5;
+  padding: 20px 80px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: background-color 0.25s;
+  position: relative;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 10px 20px;
   text-align: center;
+}
+
+.b .product-card .product-card-img .btn-theme {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 110px;
 }
 
 .mid-products-1 .wrapper .b .product-card .product-card-body {
@@ -625,6 +643,50 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 
 .mid-products-1 .wrapper .b .product-card .product-card-rating {
+  color: #ff7373;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.mid-products-1 .wrapper .b .product-card .product-card-price {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.mid-products-1 .wrapper .b .product-card .product-card-img .product-card-menu {
+  opacity: 0%;
+  transition: all 0.15s;
+}
+
+.mid-products-1 .wrapper .b .product-card:hover .product-card-img .product-card-menu {
+  opacity: 100%;
+}
+
+.mid-products-1 .wrapper .featured-products-3 .product-card .product-card-body {
+  text-align: start;
+}
+
+.mid-products-1 .wrapper .featured-products-3 .product-card .product-card-category {
+  font-size: 12px;
+  font-weight: 500;
+  color: #616365;
+  margin-top: 15px;
+}
+
+.mid-products-1 .wrapper .b .product-card .product-card-title {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mid-products-1 .wrapper .b .product-card .product-card-rating {
+  color: #ff7373;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.mid-products-1 .wrapper .b .product-card .product-card-ranking {
   color: #ff7373;
   font-size: 12px;
   margin-top: 10px;
