@@ -1,25 +1,20 @@
 
-.mid-products-2 .wrapper .box {
-  
- 
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 180%;
- 
 
-}
 .mid-products-2 .wrapper .b {
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 35px;
+  margin-top: 30px;
+  margin-left: 20px;
  
 }
 .mid-products-2 .wrapper .a{
   
-  margin-top: 20px;
+  margin-top: 30px;
  
   width: auto;
-  height: 690px;
+  height: 700px;
   background-color: rgb(189, 187, 187);
   
 }
